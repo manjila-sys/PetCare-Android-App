@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF9F6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Care Task"
+            android:textColor="#2D6657"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Create a routine for your pet"
+            android:textColor="#777777"
+            android:textSize="15sp"/>
+
+        <EditText
+            android:id="@+id/etTaskName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="25dp"
+            android:hint="Task name (e.g. Feed Max)"
+            android:inputType="text"
+            android:padding="14dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Frequency"
+            android:textColor="#2D6657"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/spFrequency"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/etTaskTime"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:hint="Time (e.g. 8:00 AM)"
+            android:inputType="text"
+            android:padding="14dp"/>
+
+        <EditText
+            android:id="@+id/etSupplies"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:hint="Supplies (e.g. Food, Bowl)"
+            android:inputType="text"
+            android:padding="14dp"/>
+
+        <EditText
+            android:id="@+id/etNotes"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="15dp"
+            android:gravity="top"
+            android:hint="Notes"
+            android:inputType="textMultiLine"
+            android:padding="14dp"/>
+
+        <Button
+            android:id="@+id/btnSaveTask"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#2D6657"
+            android:text="Save Care Task"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</ScrollView>

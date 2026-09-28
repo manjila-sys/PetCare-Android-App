@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAF8">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🐾"
+        android:textSize="40sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="35dp"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tell us about your pet"
+        android:textColor="#286654"
+        android:textSize="29sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginHorizontal="25dp"/>
+
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Let's create a profile for your furry friend 💚"
+        android:textColor="#777777"
+        android:textSize="16sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="30dp"/>
+
+    <LinearLayout
+        android:id="@+id/petCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp"
+        android:background="#E3F0EB"
+        app:layout_constraintTop_toBottomOf="@id/tvSubtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pet Information"
+            android:textColor="#286654"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"/>
+
+        <EditText
+            android:id="@+id/etPetName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="🐾  Pet's Name"
+            android:background="#FFFFFF"
+            android:padding="15dp"
+            android:textSize="16sp"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/etPetType"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="🐶  Pet Type (Dog, Cat...)"
+            android:background="#FFFFFF"
+            android:padding="15dp"
+            android:textSize="16sp"
+            android:inputType="text"
+            android:layout_marginTop="12dp"/>
+
+        <EditText
+            android:id="@+id/etPetAge"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="🎂  Pet's Age"
+            android:background="#FFFFFF"
+            android:padding="15dp"
+            android:textSize="16sp"
+            android:inputType="number"
+            android:layout_marginTop="12dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:text="Continue  →"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#286654"
+        app:layout_constraintTop_toBottomOf="@id/petCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="30dp"/>
+
+    <TextView
+        android:id="@+id/tvLater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You can add more pets later"
+        android:textColor="#888888"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/btnContinue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

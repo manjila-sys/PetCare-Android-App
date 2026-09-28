@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F7F3"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvRoutineTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Care Routine"
+                    android:textColor="#214F43"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvPetName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Care tasks for your pet"
+                    android:textColor="#777D79"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:background="#DCEBE4"
+                android:gravity="center"
+                android:text="🐾"
+                android:textSize="26sp" />
+
+        </LinearLayout>
+
+
+        <!-- Intro Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:layout_marginTop="22dp"
+            app:cardBackgroundColor="#DDEDE6"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp"
+            app:strokeColor="#C8DED5"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="18dp">
+
+                <TextView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:background="#CDE2D9"
+                    android:gravity="center"
+                    android:text="📋"
+                    android:textSize="29sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Keep every care task organised"
+                        android:textColor="#214F43"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Create routines, track progress and never miss a task."
+                        android:textColor="#65746E"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- Tasks Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Care Tasks"
+            android:textColor="#292D2B"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Manage your pet's daily and weekly routine"
+            android:textColor="#808580"
+            android:textSize="13sp" />
+
+
+        <!-- Dynamic Task Cards -->
+        <LinearLayout
+            android:id="@+id/taskContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical" />
+
+
+        <!-- Add Task Button -->
+        <Button
+            android:id="@+id/btnAddTask"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="18dp"
+            android:backgroundTint="#2D6657"
+            android:text="+  Add Care Task"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <!-- Delegation Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Delegate Care"
+            android:textColor="#292D2B"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Share your pet's care routine with family or a sitter"
+            android:textColor="#808580"
+            android:textSize="13sp" />
+
+
+        <!-- SMS Delegation Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:layout_marginTop="15dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="1dp"
+            app:strokeColor="#E1E5E2"
+            app:strokeWidth="1dp">
+
+            <Button
+                android:id="@+id/btnDelegateSms"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:text="📱   Delegate by SMS"
+                android:textAllCaps="false"
+                android:textColor="#214F43"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- Email Delegation Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="22dp"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="1dp"
+            app:strokeColor="#E1E5E2"
+            app:strokeWidth="1dp">
+
+            <Button
+                android:id="@+id/btnDelegateEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:text="✉️   Delegate by Email"
+                android:textAllCaps="false"
+                android:textColor="#214F43"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+
+</ScrollView>
